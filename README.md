@@ -1,0 +1,2 @@
+# generator-xbc-react
+

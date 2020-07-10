@@ -1,0 +1,32 @@
+{
+  "name": "generator-xbc-react",
+  "version": "1.0.01",
+  "description": "中谷科技Vue+Vuex+ant4后台管理项目脚手架",
+  "homepage": "",
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "scripts": {
+    "commitmsg": "validate-commit-msg",
+    "commit": "git-cz ",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+  },
+  "keywords": [
+    "feflow"
+  ],
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "mkdirp": "^0.5.1",
+    "shelljs": "^0.8.3",
+    "yeoman-generator": "^1.0.1",
+    "yosay": "^2.0.2"
+  },
+  "devDependencies": {
+    "babel-preset-mobx": "^2.0.0",
+    "commitizen": "^2.3.0",
+    "conventional-changelog-cli": "^1.2.0",
+    "husky": "^0.13.1",
+    "validate-commit-msg": "^2.11.1"
+  }
+}
