@@ -1,0 +1,26 @@
+.bk-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  padding: 0 34rpx;
+  height: 80rpx;
+}
+
+.bk-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  margin: 0 auto;
+  width: 94%;
+  height: 1px;
+  background: rgba(186, 186, 186, .2)
+}
+
+.bk-item.nohr::after {
+  display: none
+}

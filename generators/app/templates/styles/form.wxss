@@ -1,0 +1,72 @@
+/* 输入框 */
+.bk-input-wrap {
+    display: flex;
+    align-items: center;
+    width: 640rpx;
+    height: 72rpx;
+    font-size: 24rpx;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/* 输入框的文字 */
+.bk-input-label {
+    text-indent: 24rpx;
+    font-size: 24rpx;
+    width: 130rpx;
+}
+
+/* 输入框的值 */
+.bk-input-value {
+    flex: 1
+}
+
+/* 输入框后面的icon */
+.bk-input-after_icon {
+
+}
+
+.bk-input-after_icon > image {
+    margin-left: 20rpx;
+    margin-right: 30rpx;
+    width: 34rpx;
+    height: 34rpx;
+    background: red
+}
+
+/* select样式 */
+
+/* select框 */
+.bk-select-wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 72rpx;
+    font-size: 22rpx;
+    border: 1px solid #C6C9CF;
+}
+
+/* select框的文字 */
+.bk-select-label {
+    text-indent: 24rpx;
+    font-size: 24rpx;
+    width: 130rpx;
+}
+
+/* select框的值 */
+.bk-select-value {
+    flex: 1
+}
+
+/* select框后面的icon */
+.bk-select-val {
+
+}
+
+.bk-select-val > image {
+    margin-left: 24rpx;
+    margin-right: 42rpx;
+    width: 34rpx;
+    height: 34rpx;
+    background: red
+}

@@ -1,7 +1,7 @@
 {
-  "name": "generator-xbc-react",
-  "version": "1.0.01",
-  "description": "中谷科技Vue+Vuex+ant4后台管理项目脚手架",
+  "name": "generator-xbc-wechat",
+  "version": "1.0.2",
+  "description": "中谷科技微信小程序",
   "homepage": "",
   "files": [
     "generators"

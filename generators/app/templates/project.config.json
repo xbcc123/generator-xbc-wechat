@@ -1,0 +1,256 @@
+{
+	"description": "diamod asset",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": true,
+		"coverView": true,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"enhance": true,
+		"nodeModules": true,
+		"uglifyFileName": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"useCompilerModule": true,
+		"userConfirmedUseCompilerModuleSwitch": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.7.5",
+	"appid": "wx37944c7ab59f8bc0",
+	"projectname": "wechat_demo",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 8,
+			"list": [
+				{
+					"id": -1,
+					"name": "我的信息",
+					"pathName": "pages/me/me/me",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "首页下单付款界面",
+					"pathName": "pages/diamond/diamondBuy/diamondBuy",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/diamond/diamond/diamond",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "订单详情",
+					"pathName": "pages/order/orderDetail/orderDetail",
+					"query": "orderNo=113",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "资产首页",
+					"pathName": "pages/assets/assets/assets",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 5,
+					"name": "资产详情",
+					"pathName": "pages/assets/assetsInfo/assetsInfo",
+					"query": "type=2&index=0",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "转让界面",
+					"pathName": "pages/assets/assetsTransfer/assetsTransfer",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "寄售页面",
+					"pathName": "pages/assets/assetsSale/assetsSale",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 8,
+					"name": "资产回收",
+					"pathName": "pages/assets/assetsBackBuy/assetsBackBuy",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "发布寄售",
+					"pathName": "pages/assets/assetsConsignment/assetsConsignment",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 10,
+					"name": "填写寄售信息",
+					"pathName": "pages/assets/assetsConsignmentSubmit/assetsConsignmentSubmit",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "寄售列表",
+					"pathName": "pages/consignment/consignment/consignment",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "寄售详情",
+					"pathName": "pages/assets/assetsDetail/assetsDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "钻石资产",
+					"pathName": "pages/diamond/diamondBuy/diamondBuy",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 14,
+					"name": "资产轨迹",
+					"pathName": "pages/assets/assetsChange/assetsChange",
+					"query": "certno= 1347012609",
+					"scene": null
+				},
+				{
+					"id": 15,
+					"name": "资产激活",
+					"pathName": "pages/assets/assetsActivation/assetsActivation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "转让介绍页面",
+					"pathName": "pages/assets/assetsTransferGuide/assetsTransferGuide",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "地址列表",
+					"pathName": "pages/me/address/address",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "证书",
+					"pathName": "pages/assets/assetsCertificate/assetsCertificate",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的寄售列表",
+					"pathName": "pages/me/myAssetsList/myAssetsList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "订单列表",
+					"pathName": "pages/order/order/order",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 21,
+					"name": "个人信息",
+					"pathName": "pages/me/editMe/editMe",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "设置",
+					"pathName": "pages/me/seting/seting",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "资产走势",
+					"pathName": "pages/assets/assetsPrice/assetsPrice",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "图标示例",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "填写寄货信息",
+					"pathName": "pages/assets/assetsConsignmentSubmit/assetsConsignmentSubmit",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "关于我们",
+					"pathName": "pages/me/EZDGuide/EZDGuide",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 27,
+					"name": "我的寄售详情",
+					"pathName": "pages/me/myAssetDetail/myAssetDetail",
+					"query": "orderNo=25",
+					"scene": null
+				}
+			]
+		}
+	}
+}

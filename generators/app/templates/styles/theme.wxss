@@ -1,0 +1,4 @@
+page {
+  --skeleton-row-background-color: rgb(255, 255, 255);
+  --skeleton-avatar-background-color: rgb(255, 255, 255);
+}

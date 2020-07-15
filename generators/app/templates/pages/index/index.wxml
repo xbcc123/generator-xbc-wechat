@@ -1,0 +1,7 @@
+<view class="pl30 pt30">
+  <view class="f30">Hello World!!!</view>
+  <view class="f20 c9 mt20">项目类型: 微信小程序</view>
+  <view class="f20 c9 mt10">应用场景: 移动端微信体系</view>
+  <view class="f20 c9 mt10">UI框架: vant1.3.0</view>
+  <view class="f20 c9 mt10">状态管理: mobx</view>
+</view>

@@ -1,0 +1,32 @@
+<view class='addr-wrap' hidden='{{popuStatus}}'> 
+  <view class='addr-con' animation="{{animationData}}" catchtap='hiddenSlide'></view>
+  <view class='icon-down'>
+    <image mode='widthFix' src='{{$img}}/images/index/icon-down.png' style='width: 40rpx; height: 36rpx'></image>
+  </view> 
+  <view class='tit-top'>地址选择</view>
+  <view class='tit-wrap'>
+    <view class='tit'>
+      <view class='t-left'>
+        <view class='on {{proStatus && "active"}}' catchtap='protitclick'>{{result.province || '请选择'}}</view>
+        <view class='on {{cityStatus && "active"}}' catchtap='citytitclick'>{{result.city || '城市'}}</view>
+        <view class='on {{areaStatus && "active"}}' catchtap='areatitclick'>{{result.district || '区县'}}</view>
+      </view>
+      <view catchtap='popuConfirm' class='on'>确定</view>
+    </view>
+
+  </view>
+
+  <view class='list'>
+    <scroll-view class="scroll-view_H" scroll-y style="width: 100%; height: {{scrollHeight}}rpx">
+      <view class='item on' hidden='{{!proStatus}}' wx:key='name' wx:for='{{province}}' data-item='{{item}}' catchtap='proviclick'>
+        {{item.name}}
+      </view>
+      <view class='item on' hidden='{{!cityStatus}}' wx:key='name' wx:for='{{city}}' data-item='{{item}}' catchtap='cityclick'>
+        {{item.name}}
+      </view>
+      <view class='item on' hidden='{{!areaStatus}}' wx:key='name' wx:for='{{area}}' data-item='{{item}}' catchtap='areaclick'>
+        {{item}}
+      </view>
+    </scroll-view>
+  </view>
+</view>

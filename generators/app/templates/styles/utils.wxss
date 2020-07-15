@@ -1,0 +1,311 @@
+/*  横向  */
+
+.f {
+  display: flex;
+}
+
+.f1 {
+  flex: 1
+}
+
+.fw {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fa {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fb {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fend {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fs {
+  display: flex;
+  align-items: center;
+}
+
+.fc {
+  display: flex;
+  justify-content: center;
+}
+
+.fr {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 横线 */
+
+/*
+.hr {
+border-bottom: 1rpx solid #eee;
+} */
+
+
+/* mt */
+
+.mt10 {
+  margin-top: 10rpx;
+}
+
+.mt15 {
+  margin-top: 15rpx;
+}
+
+.mt20 {
+  margin-top: 20rpx;
+}
+
+.mt30 {
+  margin-top: 30rpx;
+}
+
+.mt40 {
+  margin-top: 40rpx;
+}
+
+
+/* mb */
+
+.mb10 {
+  margin-bottom: 10rpx;
+}
+
+.mb15 {
+  margin-bottom: 15rpx;
+}
+
+.mb20 {
+  margin-bottom: 20rpx;
+}
+
+.mb30 {
+  margin-bottom: 30rpx;
+}
+
+.mb40 {
+  margin-bottom: 40rpx;
+}
+
+.mb80 {
+  margin-bottom: 80rpx;
+}
+
+
+/* ml */
+
+.ml10 {
+  margin-left: 10rpx;
+}
+
+.ml20 {
+  margin-left: 20rpx;
+}
+
+.ml30 {
+  margin-left: 30rpx;
+}
+
+.ml40 {
+  margin-left: 40rpx;
+}
+
+
+/* mr */
+
+.mr10 {
+  margin-right: 10rpx;
+}
+
+.mr20 {
+  margin-right: 20rpx;
+}
+
+.mr30 {
+  margin-right: 30rpx;
+}
+
+.mr40 {
+  margin-right: 40rpx;
+}
+
+/* pl */
+
+.pl10 {
+  padding-left: 10rpx;
+}
+
+.pl20 {
+  padding-left: 20rpx;
+}
+
+.pl30 {
+  padding-left: 30rpx;
+}
+
+.pl40 {
+  padding-left: 40rpx;
+}
+
+
+/* pt */
+
+.pt10 {
+  padding-top: 10rpx;
+}
+
+.pt20 {
+  padding-top: 20rpx;
+}
+
+.pt30 {
+  padding-top: 30rpx;
+}
+
+.pt40 {
+  padding-top: 40rpx;
+}
+
+
+/* pb */
+
+.pb10 {
+  padding-bottom: 10rpx;
+}
+
+.pb20 {
+  padding-bottom: 20rpx;
+}
+
+.pb40 {
+  padding-bottom: 40rpx;
+}
+
+
+/* 字号 */
+
+.f30 {
+  font-size: 30rpx;
+}
+
+
+
+.f18 {
+  font-size: 18rpx;
+}
+
+.f16 {
+  font-size: 16rpx;
+}
+
+.f14 {
+  font-size: 14rpx;
+}
+
+.f12 {
+  font-size: 12rpx;
+}
+
+.f10 {
+  font-size: 10rpx;
+}
+
+.fbold {
+  font-weight: bold;
+}
+
+.cursor:hover {
+  cursor: pointer;
+}
+
+.c9 {
+  color: #999;
+}
+
+.c6 {
+  color: #666;
+}
+
+.c3 {
+  color: #333;
+}
+
+.cd {
+  color: #1890ff;
+}
+
+.cdar {
+  color: #E8584E;
+}
+
+.bcf7 {
+  background-color: #f7f7f7;
+}
+
+.bdar {
+  background-color: #E8584E;
+}
+
+
+/* 文字溢出 */
+
+.overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.overflows {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+
+/* 自适应的横线  */
+
+.hr {
+  position: relative;
+}
+
+.hr::after {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 1rpx;
+  background: #e6e6e6;
+  top: 50%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.nohr::after {
+  height: 0;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+  .hr::after {
+      transform: scaleY(0.5);
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3) {
+  .hr::after {
+      transform: scaleY(0.33);
+  }
+}
+
+.cursor:hover {
+  cursor: pointer;
+}

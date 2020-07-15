@@ -1,0 +1,145 @@
+/* 按钮  */
+
+button {
+    padding: 0rpx;
+    font-size: 24rpx;
+    background: transparent;
+}
+
+button[disabled] {
+    border: none;
+    background: red;
+}
+
+button::after {
+    border: none;
+}
+
+.button-hover {
+    background: transparent;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-size: 24rpx;
+    color: #fff;
+    border: 1px solid #21949b;
+    background: transparent;
+    width: 150rpx;
+    height: 60rpx;
+    border-radius: 0;
+}
+
+.btn:active {
+    opacity: 0.8;
+    /* background: transparent; */
+}
+
+.btn.disabled {
+    color: #999;
+    background: #e6e6e6;
+}
+
+.btn-class_tag {
+    display: flex;
+    align-items: center;
+    padding: 2rpx 10rpx;
+    font-size: 18rpx;
+    color: #666;
+    border-radius: 14rpx;
+    background: #eee
+}
+
+.btn-class1 {
+    width: 160rpx;
+    height: 70rpx;
+    background: #21949b;
+    border-radius: 35rpx;
+}
+
+.btn-class2 {
+    width: 262rpx;
+    height: 74rpx;
+    color: #21949b;
+    font-size: 26rpx;
+}
+
+.btn-class3 {
+    width: 334rpx;
+    height: 82rpx;
+    color: #21949b;
+    font-size: 26rpx;
+}
+
+.btn-class4 {
+    width: 334rpx;
+    height: 82rpx;
+    background: #21949b;
+}
+
+.btn-class5 {
+    width: 640rpx;
+    height: 82rpx;
+    background: #21949b;
+}
+
+.btn-class6 {
+    width: 183rpx;
+    height: 48rpx;
+    color: #21949b;
+    border: 1px solid #21949b;
+}
+
+.btn-class7 {
+    width: 234rpx;
+    height: 90rpx;
+    color: #fff;
+    background: #21949b;
+}
+
+.btn-class8 {
+    width: 198rpx;
+    height: 82rpx;
+    color: #21949b;
+    font-size: 26rpx;
+}
+
+.btn-class9 {
+    width: 458rpx;
+    height: 82rpx;
+    background: #21949b;
+}
+
+.btn-class10 {
+    width: 690rpx;
+    height: 82rpx;
+    background: #21949b;
+}
+
+.btn-class11 {
+    width: 136rpx;
+    height: 50rpx;
+    border-radius: 25rpx;
+    color: #333333;
+    font-size: 22rpx;
+    border: 1px solid rgba(153, 153, 153, 1);
+}
+
+.btn-class12 {
+    width: 278rpx;
+    height: 72rpx;
+    border-radius: 5rpx;
+    border: 2rpx solid rgba(255, 255, 255, 1);
+}
+
+.btn-class13 {
+    font-size: 22rpx;
+    width: 108rpx;
+    height: 56rpx;
+    border-radius: 12rpx;
+    border-color: #21949B;
+}
