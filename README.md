@@ -1,2 +1,1 @@
-# generator-xbc-react
-
+# generator-xbc-wechat
