@@ -1,6 +1,6 @@
 import $u from '../utils/util.js'
- 
-class Http { 
+
+class Http {
     constructor() {
         const environment = 'dev'; // dev = 开发 | test = 测试 | demo = 演示环境 | product = 生产环境
         switch (environment) {
@@ -29,7 +29,7 @@ class Http {
         this.interceptObj = (options) => {
             // 全局状态码影响
             let obj = {
-                197: `hanld200`,  
+                197: `hanld200`,
                 199: `hanld200`,
                 200: `hanld200`,
                 203: `hanld203`,
@@ -59,6 +59,7 @@ class Http {
 
     // 公用拦截
     intercept(res, resolve, reject) {
+		new InterceptorsStatus(res)
         const {
             code,
             data
@@ -122,7 +123,6 @@ class Http {
                 data: params,
                 header: this.setHeader(),
                 success(res) {
-                    wx.hideLoading()
                     const {
                         code
                     } = res.data
@@ -211,6 +211,65 @@ class Http {
                 }
             })
         })
+    }
+}
+
+// 改版后的拦截规则 全部逻辑根据http状态码判断
+// 说明详细地址 http://192.168.16.20/dev-document/dev-doc/blob/master/docs/HTTP%E7%8A%B6%E6%80%81%E7%A0%81%E8%AF%B4%E6%98%8E.md
+class InterceptorsStatus {
+    constructor(options) {
+        const status = options.statusCode;
+        this.info = options;
+        this.statusMap = new Map()
+            .set(200, "requestSuccess")
+            .set(401, "noPermissions")
+            .set(403, "noLogin")
+            .set(404, "interfaceNotFound")
+            .set(405, "functionError")
+            .set(406, "paramsError")
+            .set(500, "serverError");
+        if (this.statusMap.has(status)) {
+            this[this.statusMap.get(status)]();
+        }
+    }
+
+    // 业务完成
+    requestSuccess() {
+        // console.log("接口调用成功");
+    }
+
+    // 无权限
+    noPermissions() {
+        $u.showToast("接口无权限")
+    }
+
+    // 未登录
+    noLogin() {
+        setTimeout(() => {
+            wx.reLaunch({
+                url: '/pages/login/login'
+            })
+        }, 800)
+    }
+
+    // 接口不存在
+    interfaceNotFound() {
+        Message.error("接口不存在");
+    }
+
+    // 请求方式错误
+    functionError() {
+        $u.showToast("请求方式错误")
+    }
+
+    // 参数错误
+    paramsError() {
+        $u.showToast(this.info.data)
+    }
+
+    // 服务器错误
+    serverError() {
+        $u.showToast("服务器错误")
     }
 }
 
